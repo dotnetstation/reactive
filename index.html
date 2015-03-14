@@ -133,6 +133,7 @@ source
 						<img src="img/RethinkBestPractices.PNG" />
 					</section>
 					<section>
+						<h2>Rethinking best practices</h2>
 						<ul>
 							<li class="fragment">Throwing out the notion of templates and building views with JavaScript</li>
 							<li class="fragment">“Re-rendering” your entire application when your data changes</li>
@@ -144,13 +145,53 @@ source
 					</section>
 				</section>
 				<section>
-					(Data) => View
+					<section>
+						(Data) => View
+					</section>
+					<section>
+						<h2>Fast, really fast</h2>
+						<ul>
+							<li class="fragment">Virtual Dom</li>
+							<li class="fragment">Rerendering the entire view, but apply only changes</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Isomorphic</h2>
+						<ul>
+							<li class="fragment">Generate dom in the server side</li>
+							<li class="fragment">Regenerate it everytime you need it, in the client side</li>
+							<li class="fragment">You win fast rendering, better seo and client refresh</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Testability for free</h2>
+					</section>
 				</section>
 				<section data-background="img/AndroidiOSReact.png" data-background-size="20%" data-background-position="right">
-					<p>React Native<p/>
+					<h1>React Native</h1>
+					<pre class="fragment" ><code data-trim contenteditable>
+						render() {
+	return (
+		<View style={{marginTop: 20}}>
+			<Text>Checklist</Text>
+			<TextInput
+				style={styles.input}
+				autoFocus={true}
+				onSubmitEditing={this.handleSubmit}
+			/>
+			<View style={styles.list}>
+				{this.renderItems()}
+			</View>
+		</View>
+	);
+				</code></pre>
 				</section>
 				<section>
-					<p>Welcome to to post Reactjs era</p>
+					<p>Welcome to post Reactjs era</p>
+				</section>
+
+				<section>
+					<h2>Thanks, </h2><h2 class="fragment">questions ?</h2>
 				</section>
 			</div>
 
